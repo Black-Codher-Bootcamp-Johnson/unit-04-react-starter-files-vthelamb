@@ -28,17 +28,27 @@ function App() {
   }
 
   function addBook(id) {
-    const title = books.find((book) => book.id === id);
-    setBookcase(books.filter (book => book.id ===id));
-    
-
-    if (title) {
-      const setBookcase = [...bookcase,title];
+    const bookTheUserWantToAdd = books.find((book) => book.id === id);
+    console.log(bookTheUserWantToAdd)
+    if (bookTheUserWantToAdd) {
+      setBookcase([...bookcase,bookTheUserWantToAdd]);
+      setBook(books.filter(book => book.volumeInfo.title !== bookTheUserWantToAdd.volumeInfo.title))
     }
     else {
       console.log(`This book was not found`);
     }
     console.log(bookcase)
+  }
+
+  function removeBook(id){
+    const bookTheUserWantToRemove = bookcase.find((book) => book.id === id);
+    if (bookTheUserWantToRemove) {
+      setBookcase(books.filter(book => book.volumeInfo.title !== bookTheUserWantToRemove.volumeInfo.title))
+      setBook([...bookcase,bookTheUserWantToRemove])
+    }
+    else {
+      console.log(`No books found`);
+    }
   }
 
   return (
@@ -68,7 +78,7 @@ function App() {
                 setKeyword={setKeyword}
                 findBooks={findBooks}
               />
-              <BookcasePage bookcase={bookcase} setBookcase={setBookcase}></BookcasePage>
+              <BookcasePage bookcase={bookcase} removeBook={removeBook}></BookcasePage>
             </>
           }
         />
