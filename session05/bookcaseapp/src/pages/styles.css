@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 2px;
+  padding: 2px;
+  align-self:center;
+  line-height: 1.2;
+}
+
+body{
+    background-color: rgb(252, 247, 250);
+}
+
+h1 {
+    color: darkorchid;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+}
+
+.title{
+    color: darkmagenta;
+    font-size: 50px;
+}
+
+.navbar{
+    font-family: 'Indie Flower', cursive;
+    font-size: large;
+    font-weight: bold;
+    padding: 6px;
+    text-align: center;
+    border: 3px solid magenta;
+    display: block;
+    text-decoration: none;
+    
+}
+  .navbar:hover {
+    background-color: rgb(243, 156, 207);
+  }
+
+.searchBar{
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.searchBar form{
+    width:100%;
+    padding-top: 5px;
+    padding-bottom:5px;
+    border-bottom:1px solid #dbdbdb;
+  }
+
+.aboutme {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
