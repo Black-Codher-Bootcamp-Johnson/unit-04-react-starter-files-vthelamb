@@ -13,9 +13,9 @@ const Book = (props) => {
       </p>
       <p>{props.book.volumeInfo.subtitle}</p>
       <p>{props.book.volumeInfo.description}</p>
-      {props.removeBook ? (
+        {props.removeBook ? (
         <button onClick={() => props.removeBook(props.book.id)} className="remove-button">Remove</button>
-      ) : (
+        ) : (
         <button onClick={() => props.addBook(props.book.id)}>
           Add to Bookcase
         </button>

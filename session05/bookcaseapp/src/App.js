@@ -43,8 +43,8 @@ function App() {
   function removeBook(id){
     const bookTheUserWantToRemove = bookcase.find((book) => book.id === id);
     if (bookTheUserWantToRemove) {
-      setBookcase(books.filter(book => book.volumeInfo.title !== bookTheUserWantToRemove.volumeInfo.title))
-      setBook([...bookcase,bookTheUserWantToRemove])
+      setBookcase(bookcase.filter(book => book.volumeInfo.title !== bookTheUserWantToRemove.volumeInfo.title))
+      setBook([bookTheUserWantToRemove,...books])
     }
     else {
       console.log(`No books found`);
