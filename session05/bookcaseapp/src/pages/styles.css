@@ -11,12 +11,22 @@
 body{
     background-color: rgb(252, 247, 250);
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
 }
 
 h1 {
     color: darkorchid;
     text-align: center;
     font-family: 'Indie Flower', cursive;
+}
+
+h2 {
+    font-family: 'Indie Flower', cursive;
+    color: darkorchid;
+}
+
+h3 {
+  font-family: 'Indie Flower', fantasy;
 }
 
 .title{
@@ -43,6 +53,7 @@ h1 {
   text-align: center;
   font-weight: bold;
   font-size: 17px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .searchBar form{
@@ -63,9 +74,41 @@ h1 {
     border: 0;
     border-radius: 20px;
     color: #fff;
-    float: right;
-    font-size: 1.0em;
+    font-size: 13px;
     background-color: #bd1515;
-    font-weight: 400;
-    font-size: 1em;
+    font-weight: 300;
+    text-decoration: none;
+    cursor: pointer;  
+}
+
+.remove-button:hover {
+  background-color: rgb(243, 156, 207);
+}
+
+.add-button {
+  padding: 10px 15px;
+    border: 0;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 13px;
+    background-color: blue;
+    font-weight: 300;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: rgb(243, 156, 207);
+}
+
+.submitbutton {
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 15px;
+  background-color: darkorchid;
+  font-weight: 300;
+  font-size: 1em;
+  cursor: pointer;  
 }
