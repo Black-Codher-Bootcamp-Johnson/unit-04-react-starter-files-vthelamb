@@ -112,3 +112,14 @@ h3 {
   font-size: 1em;
   cursor: pointer;  
 }
+
+.book {
+  margin-top:5px;
+  margin-bottom:15px;
+  border-bottom: 1px solid rgb(209, 209, 209);
+  display: flex;
+}
+
+.description {
+  text-align: justify;
+}
