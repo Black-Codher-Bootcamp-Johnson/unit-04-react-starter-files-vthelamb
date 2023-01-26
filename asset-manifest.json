@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/veronicaslibrary/static/css/main.7eda2781.css",
+    "main.js": "/veronicaslibrary/static/js/main.9e811dd7.js",
+    "index.html": "/veronicaslibrary/index.html",
+    "main.7eda2781.css.map": "/veronicaslibrary/static/css/main.7eda2781.css.map",
+    "main.9e811dd7.js.map": "/veronicaslibrary/static/js/main.9e811dd7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7eda2781.css",
+    "static/js/main.9e811dd7.js"
+  ]
+}
